@@ -1,0 +1,103 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'form.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(533, 557)
+        self.centralwidget = QtWidgets.QWidget(Form)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.tab)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.tableWidget = QtWidgets.QTableWidget(self.tab)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(0)
+        self.tableWidget.setRowCount(0)
+        self.gridLayout_2.addWidget(self.tableWidget, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.tab_2)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.tableWidget_2 = QtWidgets.QTableWidget(self.tab_2)
+        self.tableWidget_2.setObjectName("tableWidget_2")
+        self.tableWidget_2.setColumnCount(0)
+        self.tableWidget_2.setRowCount(0)
+        self.gridLayout_3.addWidget(self.tableWidget_2, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.tab_3)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.textEdit = QtWidgets.QTextEdit(self.tab_3)
+        self.textEdit.setObjectName("textEdit")
+        self.gridLayout_4.addWidget(self.textEdit, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab_3, "")
+        self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
+        Form.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Form)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 533, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menu = QtWidgets.QMenu(self.menuFile)
+        self.menu.setObjectName("menu")
+        self.menuAnomaly = QtWidgets.QMenu(self.menubar)
+        self.menuAnomaly.setObjectName("menuAnomaly")
+        Form.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Form)
+        self.statusbar.setObjectName("statusbar")
+        Form.setStatusBar(self.statusbar)
+        self.actionFind = QtWidgets.QAction(Form)
+        self.actionFind.setObjectName("actionFind")
+        self.actionSave = QtWidgets.QAction(Form)
+        self.actionSave.setObjectName("actionSave")
+        self.action_PCAP = QtWidgets.QAction(Form)
+        self.action_PCAP.setObjectName("action_PCAP")
+        self.action_Text = QtWidgets.QAction(Form)
+        self.action_Text.setObjectName("action_Text")
+        self.actionROC = QtWidgets.QAction(Form)
+        self.actionROC.setObjectName("actionROC")
+        self.menu.addAction(self.action_PCAP)
+        self.menu.addAction(self.action_Text)
+        self.menuFile.addAction(self.menu.menuAction())
+        self.menuFile.addAction(self.actionSave)
+        self.menuAnomaly.addAction(self.actionFind)
+        self.menuAnomaly.addAction(self.actionROC)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuAnomaly.menuAction())
+
+        self.retranslateUi(Form)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Поиск аномалий"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Form", "Данные"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Form", "Поиск аномалий"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("Form", "Результаты"))
+        self.menuFile.setTitle(_translate("Form", "Файл"))
+        self.menu.setTitle(_translate("Form", "Открыть..."))
+        self.menuAnomaly.setTitle(_translate("Form", "Аномалии"))
+        self.actionFind.setText(_translate("Form", "Обнаружить"))
+        self.actionSave.setText(_translate("Form", "Сохранить"))
+        self.action_PCAP.setText(_translate("Form", "Файл PCAP"))
+        self.action_Text.setText(_translate("Form", "Текстовый файл"))
+        self.actionROC.setText(_translate("Form", "Вывод результатов"))
+
+
